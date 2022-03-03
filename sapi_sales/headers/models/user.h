@@ -27,13 +27,19 @@ enum Specialization{
     ENGINEERING
 };
 
+typedef struct {
+    unsigned int birthYear;
+    unsigned int birthMonth;
+    unsigned int birthDay;
+}BirthDate;
+
 typedef struct{
     unsigned int id;
     char name[50];
     enum UserType type;
     enum Gender gender;
     enum Specialization specialization;
-    unsigned int birthYear;
+    BirthDate birthDate;
 }User;
 
 char* getUserType(enum UserType type);
@@ -48,7 +54,9 @@ void setUserData(
         enum UserType type,
         enum Gender gender,
                 enum Specialization specialization,
-                        int birthYear);
+                        unsigned int birthYear,
+                        unsigned int birthMonth,
+                        unsigned int birthDay);
 
 /*User* createUser(
         char* name,

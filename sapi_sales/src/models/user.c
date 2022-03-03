@@ -70,25 +70,29 @@ void printUser(User *user){
            "\t - TYPE: %s\n"
            "\t - GENDER: %s\n"
            "\t - SPECIALIZATION: %s\n"
-           "\t - BIRTH YEAR: %i\n\n",
+           "\t - BIRTH DATE: %i/%i/%i\n\n",
            user->name,
            user->id,
            getUserType(user->type),
            getGender(user->gender),
            getSpecialization(user->specialization),
-           user->birthYear);
+           user->birthDate.birthYear,
+           user->birthDate.birthMonth,
+           user->birthDate.birthDay);
 }
 
 void setUserData(User *user, char *name, enum UserType type, enum Gender gender, enum Specialization specialization,
-                 int birthYear) {
+                 unsigned int birthYear, unsigned int birthMonth, unsigned int birthDay) {
     user->id = ++numberOfUsers;
     user->specialization = specialization;
-    user->birthYear = birthYear;
+    user->birthDate.birthYear = birthYear;
+    user->birthDate.birthMonth = birthMonth;
+    user->birthDate.birthDay = birthDay;
     user->gender = gender;
     user->type = type;
     strcpy(user->name, name);
 }
 
 void deleteUser(User **user){
-    user = NULL;
+    free(*user);
 }

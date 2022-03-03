@@ -19,15 +19,24 @@ char *getProductType(enum ProductType type) {
             return "Undefined";
     }
 }
-/*
+
 void createProduct(Product **product) {
     *product = (Product*) malloc(sizeof (Product));
     if (!(*product)){
         printErrorMessage(MEMORY_ALLOCATION);
     }
-}*/
+}
 
 
+void setProductData(Product *product, char *id, char *name, enum ProductType type, unsigned int amount) {
+    strcpy(product->id, id);
+    strcpy(product->name, name);
+    product->type = type;
+    product->amount = amount;
+    product->creationDate = time(NULL);
+}
+
+/*
 Product *createProduct(char *id, char *name, enum ProductType type, unsigned int amount) {
     Product* newProduct = malloc(sizeof(Product));
     strcpy(newProduct->id, id);
@@ -37,6 +46,7 @@ Product *createProduct(char *id, char *name, enum ProductType type, unsigned int
     newProduct->creationDate = time(NULL);
     return newProduct;
 }
+ */
 
 void printProduct(Product *product) {
     printf("%s details:\n"
@@ -52,7 +62,7 @@ void printProduct(Product *product) {
 }
 
 void deleteProduct(Product *product) {
-    product = NULL;
+    free(product);
 }
 
 

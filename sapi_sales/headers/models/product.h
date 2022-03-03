@@ -25,14 +25,16 @@ typedef struct {
 
 char* getProductType(enum ProductType type);
 
-//void createProduct(Product **product);
+void createProduct(Product **product);
 
-Product* createProduct(
+void setProductData(Product* product, char* id, char* name, enum ProductType type, unsigned int amount);
+
+/*Product* createProduct(
         char id[10],
         char name[20],
         enum ProductType type,
                 unsigned int amount);
-
+*/
 
 void printProduct(Product* product);
 

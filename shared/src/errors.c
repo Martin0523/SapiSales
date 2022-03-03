@@ -15,6 +15,14 @@ void printErrorMessage(enum ErrorType errorType){
             printf("\n\nNull pointer exception!\n\n");
             break;
         }
+        case USER_DOES_NOT_EXIST:{
+            printf("\n\nUser does not exist!\n\n");
+            break;
+        }
+        case PRODUCT_DOES_NOT_EXIST:{
+            printf("\n\nProduct does not exist!\n\n");
+            break;
+        }
         default:{
             printf("\n\nUndefined error!\n\n");
             break;
