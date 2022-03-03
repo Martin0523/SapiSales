@@ -11,5 +11,7 @@ enum LabType{
 };
 
 void printDescriptionMessage(enum LabType messageType);
+void kodFuttatasaElkezodott();
+void kodFuttatasaBefejezodott();
 
 #endif //SAPISALES_MESSAGES_H

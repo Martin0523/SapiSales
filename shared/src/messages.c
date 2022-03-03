@@ -17,3 +17,11 @@ void printDescriptionMessage(enum LabType messageType){
         }
     }
 }
+
+void kodFuttatasaElkezodott() {
+    printf("A kod futtatasa elkezdodott!");
+}
+
+void kodFuttatasaBefejezodott() {
+    printf("A kod futtatasa befejezodott!");
+}
