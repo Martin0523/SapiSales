@@ -11,6 +11,9 @@ enum ErrorType {
     NULL_POINTER_EXCEPTION,
     USER_DOES_NOT_EXIST,
     PRODUCT_DOES_NOT_EXIST,
+    USER_ARRAY_FULL,
+    USER_ARRAY_DOES_NOT_EXIST,
+    PRODUCT_ARRAY_FULL,
 };
 
 void printErrorMessage(enum ErrorType errorType);

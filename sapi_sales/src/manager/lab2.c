@@ -2,6 +2,7 @@
 
 void testUserFunctionalities() {
     srand(time(0));
+    //Csinalni egy user tombot, vegtelen ciklusban generalni adatokat
     ///Declaring user pointers
     User *user1, *user2, *user3;
 
@@ -11,9 +12,10 @@ void testUserFunctionalities() {
     createUser(&user3);
 
     ///Fill with data
-    setUserData(user1, "John Peterson", rand()%1, rand()%1, rand()%6, rand()%2023, rand()%13, rand()%32);
-    setUserData(user2, "Jane Austin", TEACHER, FEMALE, ENGINEERING, 1996, 10, 27);
-    setUserData(user3, "John Peterson", STUDENT, MALE, COMPUTER_SCIENCE, 2003, 7, 7);
+    setUserData(user1, "John Peterson", STUDENT, MALE, COMPUTER_SCIENCE, 2003, 11, 3);
+    setUserData(user2, "Jane Austin", TEACHER, FEMALE, ENGINEERING, 1996, 4, 1);
+    setUserData(user3, "John Peterson", STUDENT, MALE, COMPUTER_SCIENCE, 2003, 11, 3);
+
 
     ///Print users
     printUser(user1);
@@ -36,9 +38,6 @@ void testProductFunctionalities() {
     createProduct(&product1);
     createProduct(&product2);
     createProduct(&product3);
-    //Product* product1 = createProduct("MS1", "Apple", FRUIT, 10);
-    //Product* product2 = createProduct("MS2", "Book", SCHOOL, 4);
-    //Product* product3 = createProduct("MS3", "Tomato", GROCERY, 20);
 
     ///Fill with data
     setProductData(product1, "MS1", "Apple", FRUIT, 10);

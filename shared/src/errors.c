@@ -23,6 +23,18 @@ void printErrorMessage(enum ErrorType errorType){
             printf("\n\nProduct does not exist!\n\n");
             break;
         }
+        case USER_ARRAY_FULL:{
+            printf("\n\nUserArray is full!\n\n");
+            break;
+        }
+        case USER_ARRAY_DOES_NOT_EXIST:{
+            printf("\n\nUserArray does not exist!\n\n");
+            break;
+        }
+        case PRODUCT_ARRAY_FULL:{
+            printf("\n\nProductArray is full!\n\n");
+            break;
+        }
         default:{
             printf("\n\nUndefined error!\n\n");
             break;

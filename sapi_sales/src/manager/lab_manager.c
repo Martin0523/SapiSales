@@ -1,7 +1,3 @@
-//
-// Created by Legion on 3/3/2022.
-//
-
 #include "lab_manager.h"
 
 void lab2() {
@@ -12,4 +8,6 @@ void lab2() {
 
 void lab3() {
     printDescriptionMessage(LAB3);
+    testUserArrayFunctionalities();
+    testProductArrayFunctionalites();
 }
