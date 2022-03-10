@@ -9,5 +9,5 @@ void lab2() {
 void lab3() {
     printDescriptionMessage(LAB3);
     testUserArrayFunctionalities();
-    testProductArrayFunctionalites();
+    testProductArrayFunctionalities();
 }

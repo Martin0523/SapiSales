@@ -25,3 +25,9 @@ void kodFuttatasaElkezodott() {
 void kodFuttatasaBefejezodott() {
     printf("A kod futtatasa befejezodott!");
 }
+
+//void printDeleteMessage(enum DeletionType messageType) {
+//    switch (messageType) {
+//        case :
+//    }
+//}

@@ -10,8 +10,16 @@ enum LabType{
     LAB3,
 };
 
+enum DeletionType{
+    USER_DELETED,
+    PRODUCT_DELETED,
+    USER_ARRAY_DELETED,
+    PRODUCT_ARRAY_DELETED,
+};
+
 void printDescriptionMessage(enum LabType messageType);
 void kodFuttatasaElkezodott();
 void kodFuttatasaBefejezodott();
+void printDeleteMessage(enum DeletionType messageType);
 
 #endif //SAPISALES_MESSAGES_H

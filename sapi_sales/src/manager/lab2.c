@@ -1,8 +1,6 @@
 #include "lab2.h"
 
 void testUserFunctionalities() {
-    srand(time(0));
-    //Csinalni egy user tombot, vegtelen ciklusban generalni adatokat
     ///Declaring user pointers
     User *user1, *user2, *user3;
 

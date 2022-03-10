@@ -4,7 +4,7 @@
 
 int main() {
     kodFuttatasaElkezodott();
-    lab2();
+    //lab2();
     lab3();
     kodFuttatasaBefejezodott();
     return 0;

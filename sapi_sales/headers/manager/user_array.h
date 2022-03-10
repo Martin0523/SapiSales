@@ -6,8 +6,8 @@
 
 typedef struct {
     User** users;
-    unsigned int capacity;
-    unsigned int numberOfUsers;
+    int capacity;
+    int numberOfUsers;
 }UserArray;
 
 void createUserArray(UserArray **userArray, unsigned int maxUsers);

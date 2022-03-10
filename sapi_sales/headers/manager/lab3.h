@@ -2,9 +2,9 @@
 #define SAPISALES_LAB3_H
 
 #include "user_array.h"
-#include "ProductArray.h"
+#include "product_array.h"
 
 void testUserArrayFunctionalities();
-void testProductArrayFunctionalites();
+void testProductArrayFunctionalities();
 
 #endif //SAPISALES_LAB3_H
