@@ -7,6 +7,8 @@
 #include "string.h"
 #include "stdio.h"
 #include "time.h"
+#include "errors.h"
+#include "messages.h"
 
 enum ProductType{
     GROCERY,

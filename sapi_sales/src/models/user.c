@@ -95,4 +95,5 @@ void setUserData(User *user, char *name, enum UserType type, enum Gender gender,
 
 void deleteUser(User **user){
     free(*user);
+    printDeleteMessage(USER_DELETED);
 }

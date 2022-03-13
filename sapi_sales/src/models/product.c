@@ -3,7 +3,6 @@
 //
 
 #include "product.h"
-#include "errors.h"
 
 char *getProductType(enum ProductType type) {
     switch (type) {
@@ -63,6 +62,7 @@ void printProduct(Product *product) {
 
 void deleteProduct(Product *product) {
     free(product);
+    printDeleteMessage(PRODUCT_DELETED);
 }
 
 

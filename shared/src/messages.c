@@ -26,8 +26,26 @@ void kodFuttatasaBefejezodott() {
     printf("A kod futtatasa befejezodott!");
 }
 
-//void printDeleteMessage(enum DeletionType messageType) {
-//    switch (messageType) {
-//        case :
-//    }
-//}
+void printDeleteMessage(enum DeletionType messageType) {
+    switch (messageType) {
+        case USER_DELETED:{
+            printf("\nUser deleted!\n");
+            break;
+        }
+        case PRODUCT_DELETED:{
+            printf("\nProduct deleted!\n");
+            break;
+        }
+        case USER_ARRAY_DELETED:{
+            printf("\nUser array deleted!\n");
+            break;
+        }
+        case PRODUCT_ARRAY_DELETED:{
+            printf("\nProduct array deleted!\n");
+            break;
+        }
+        default:{
+            printf("\nUndefined deletion\n");
+        }
+    }
+}

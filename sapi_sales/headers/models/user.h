@@ -6,6 +6,8 @@
 #include "stdlib.h"
 #include "stdio.h"
 #include "string.h"
+#include "errors.h"
+#include "messages.h"
 
 enum UserType{
     STUDENT,

@@ -13,7 +13,7 @@ void deleteProductArray(ProductArray **productArray) {
         free((*productArray)->products[i]);
     }
     free(*productArray);
-
+    printDeleteMessage(PRODUCT_ARRAY_DELETED);
 }
 
 bool addNewProduct(ProductArray *productArray, Product *newProduct) {

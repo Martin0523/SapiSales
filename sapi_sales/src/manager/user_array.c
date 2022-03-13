@@ -13,6 +13,7 @@ void deleteUserArray(UserArray **userArray) {
         free((*userArray)->users[i]);
     }
     free(*userArray);
+    printDeleteMessage(USER_ARRAY_DELETED);
 }
 
 bool addNewUser(UserArray *userArray, User *newUser) {

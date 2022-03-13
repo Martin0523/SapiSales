@@ -3,6 +3,7 @@
 
 #include "user.h"
 #include "stdbool.h"
+#include "messages.h"
 
 typedef struct {
     User** users;
