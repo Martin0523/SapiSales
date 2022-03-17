@@ -22,7 +22,6 @@ bool addNewUser(UserArray *userArray, User *newUser) {
     }
     userArray->users[userArray->numberOfUsers] = newUser;
     userArray->numberOfUsers++;
-    userArray->users[userArray->numberOfUsers]->id = userArray->users[userArray->numberOfUsers-1]->id + 10;
     return true;
 }
 
