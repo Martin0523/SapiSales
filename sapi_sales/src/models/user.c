@@ -83,7 +83,7 @@ void printUser(User *user){
 
 void setUserData(User *user, char *name, enum UserType type, enum Gender gender, enum Specialization specialization,
                  unsigned int birthYear, unsigned int birthMonth, unsigned int birthDay) {
-    user->id = ++numberOfUsers;
+    user->id = ++numberOfUsers*10 + 1000;
     user->specialization = specialization;
     user->birthDate.birthYear = birthYear;
     user->birthDate.birthMonth = birthMonth;
