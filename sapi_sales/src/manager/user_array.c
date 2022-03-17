@@ -20,6 +20,7 @@ bool addNewUser(UserArray *userArray, User *newUser) {
     if (userArray->capacity < userArray->numberOfUsers){
         return false;
     }
+
     userArray->users[userArray->numberOfUsers] = newUser;
     userArray->numberOfUsers++;
     return true;
