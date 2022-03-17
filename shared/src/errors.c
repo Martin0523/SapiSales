@@ -35,6 +35,14 @@ void printErrorMessage(enum ErrorType errorType){
             printf("\n\nProductArray is full!\n\n");
             break;
         }
+        case PRODUCT_STACK_FULL:{
+            printf("\n\nProduct stack is full!\n\n");
+            break;
+        }
+        case PRODUCT_STACK_EMPTY:{
+            printf("\n\nProduct stack is empty!\n\n");
+            break;
+        }
         default:{
             printf("\n\nUndefined error!\n\n");
             break;

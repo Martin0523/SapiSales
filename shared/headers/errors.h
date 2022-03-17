@@ -14,6 +14,8 @@ enum ErrorType {
     USER_ARRAY_FULL,
     USER_ARRAY_DOES_NOT_EXIST,
     PRODUCT_ARRAY_FULL,
+    PRODUCT_STACK_FULL,
+    PRODUCT_STACK_EMPTY,
 };
 
 void printErrorMessage(enum ErrorType errorType);

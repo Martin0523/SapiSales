@@ -8,6 +8,7 @@
 enum LabType{
     LAB2,
     LAB3,
+    LAB5,
 };
 
 enum DeletionType{
@@ -15,6 +16,7 @@ enum DeletionType{
     PRODUCT_DELETED,
     USER_ARRAY_DELETED,
     PRODUCT_ARRAY_DELETED,
+    PRODUCT_STACK_DELETED,
 };
 
 void printDescriptionMessage(enum LabType messageType);
