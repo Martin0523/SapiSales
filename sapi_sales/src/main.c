@@ -5,8 +5,8 @@
 int main() {
     kodFuttatasaElkezodott();
     //lab2();
-    lab3();
-    //lab5();
+    //lab3();
+    lab5();
     kodFuttatasaBefejezodott();
     return 0;
 }
