@@ -43,6 +43,10 @@ void printErrorMessage(enum ErrorType errorType){
             printf("\n\nProduct stack is empty!\n\n");
             break;
         }
+        case ELEMENT_IN_QUEUE_NOT_FOUND:{
+            printf("\n\nElement was not found in queue!\n\n");
+            break;
+        }
         default:{
             printf("\n\nUndefined error!\n\n");
             break;

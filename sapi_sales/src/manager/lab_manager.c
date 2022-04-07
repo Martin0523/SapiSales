@@ -16,3 +16,8 @@ void lab5() {
     printDescriptionMessage(LAB5);
     testProductStackFunctionalities();
 }
+
+void lab8() {
+    printDescriptionMessage(LAB8);
+    testUserQueueFunctionalities();
+}

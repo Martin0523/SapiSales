@@ -16,6 +16,7 @@ enum ErrorType {
     PRODUCT_ARRAY_FULL,
     PRODUCT_STACK_FULL,
     PRODUCT_STACK_EMPTY,
+    ELEMENT_IN_QUEUE_NOT_FOUND,
 };
 
 void printErrorMessage(enum ErrorType errorType);
