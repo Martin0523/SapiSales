@@ -32,6 +32,5 @@ void testUserListFunctionalities() {
 
     printf("\n4\n");
     printUser(findElementInList(userNode,1060));
-
     deleteUserList(&userNode);
 }

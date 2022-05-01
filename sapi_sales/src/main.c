@@ -7,7 +7,8 @@ int main() {
     //lab2();
     //lab3();
     //lab5();
-    lab8();
+    //lab8();
+    lab9();
     //kodFuttatasaBefejezodott();
     return 0;
 }
