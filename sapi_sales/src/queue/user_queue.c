@@ -54,6 +54,7 @@ void printQueue(UserQueue *userQueue, char *destination) {
 
 void deleteQueue(UserQueue **userQueue) {
     for (int i = 0; i < (*userQueue)->size; i++){
+        printUser((*userQueue)->users[i]);
         free((*userQueue)->users[i]);
     }
     free(*userQueue);

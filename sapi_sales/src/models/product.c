@@ -60,8 +60,8 @@ void printProduct(Product *product) {
            product->creationDate);
 }
 
-void deleteProduct(Product *product) {
-    free(product);
+void deleteProduct(Product **product) {
+    free(*product);
     printDeleteMessage(PRODUCT_DELETED);
 }
 

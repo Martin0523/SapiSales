@@ -40,6 +40,6 @@ void setProductData(Product* product, char* id, char* name, enum ProductType typ
 
 void printProduct(Product* product);
 
-void deleteProduct(Product* product);
+void deleteProduct(Product** product);
 
 #endif //SAPISALES_PRODUCT_H

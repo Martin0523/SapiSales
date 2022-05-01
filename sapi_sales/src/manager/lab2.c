@@ -48,9 +48,9 @@ void testProductFunctionalities() {
     printProduct(product3);
 
     ///Delete products
-    deleteProduct(product1);
-    deleteProduct(product2);
-    deleteProduct(product3);
+    deleteProduct(&product1);
+    deleteProduct(&product2);
+    deleteProduct(&product3);
 }
 
 

@@ -31,12 +31,18 @@ void testUserQueueFunctionalities() {
     dequeue(userQueue);
     dequeue(userQueue);
     enqueue(userQueue, user2);
-    printQueue(userQueue, "queueTest.txt");
+    printf("\nasd\n");
+    printQueue(userQueue, "CON");
 
     if (findElementInQueue(userQueue, 1020) == -1){
         printErrorMessage(ELEMENT_IN_QUEUE_NOT_FOUND);
     } else{
         printf("\n%i\n", findElementInQueue(userQueue, 1020));
     }
-    //deleteQueue(&userQueue);
+
+    deleteUser(&user1);
+    deleteUser(&user2);
+    deleteUser(&user3);
+    deleteUser(&user4);
+//    deleteQueue(&userQueue);
 }

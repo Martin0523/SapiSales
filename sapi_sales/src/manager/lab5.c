@@ -47,6 +47,7 @@ void testProductStackFunctionalities() {
                 break;
             }
             case 6:{
+                deleteProductStack(&productStack);
                 return;
             }
             default:
