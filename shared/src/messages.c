@@ -23,6 +23,10 @@ void printDescriptionMessage(enum LabType messageType){
             printf("\n\nTesting User List functionalities\n\n");
             break;
         }
+        case LAB10:{
+            printf("\n\nTesting User BST functionalities\n\n");
+            break;
+        }
         default:{
             printf("\n\nUndefined description\n\n");
             break;
