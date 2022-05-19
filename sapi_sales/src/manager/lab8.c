@@ -5,7 +5,7 @@ void testUserQueueFunctionalities() {
     UserQueue *userQueue;
 
     ///Creating queue
-    createUserQueue(&userQueue, 3);
+    createUserQueue(&userQueue, 10);
 
     ///Declaring users
     User *user1, *user2, *user3, *user4;
